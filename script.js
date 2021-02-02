@@ -14,8 +14,8 @@ const playGame = () => {
       const computerHands = computerArray[computerNumber];
       
       setTimeout(() => {
-        playerImage.src = `assets/${option.textContent}.png`;
-        computerImage.src = `assets/${computerHands}.png`;
+        playerImage.src = `${option.textContent}.png`;
+        computerImage.src = `${computerHands}.png`;
         compareHands(option.textContent, computerHands);
         //reset animation
         playerImage.style="";
